@@ -34,7 +34,7 @@ class iconState:
             return
         if (not len(self.delay)):
             self.delay = [1]
-        while len(self.delay) != self.frames:
+        while len(self.delay) < self.frames:
             self.delay.append(self.delay[-1])
 
 
